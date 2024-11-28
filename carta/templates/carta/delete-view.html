@@ -1,0 +1,12 @@
+{% extends 'carta/base.html' %}
+
+{% block content %}
+<h2> Eliminar menu </h2>
+<form method="post">
+    {% csrf_token %}
+
+    <p>¿Desea eliminar este menu?</p>
+
+    <button class="btn btn-danger" type="submit">Eliminar</button>
+</form>
+{% endblock %}
